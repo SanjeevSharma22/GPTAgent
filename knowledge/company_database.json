@@ -1,0 +1,186 @@
+{
+  "companies": [
+    {
+      "name": "Microsoft",
+      "aliases": ["MSFT", "Microsoft Corporation"],
+      "primary_domain": "microsoft.com",
+      "regional_domains": {
+        "UK": "microsoft.com/en-gb",
+        "Germany": "microsoft.com/de-de",
+        "Japan": "microsoft.com/ja-jp",
+        "China": "microsoft.com/zh-cn"
+      },
+      "industry": "Technology",
+      "subindustry": "Software",
+      "size": "Large",
+      "country": "US",
+      "confidence": 0.99
+    },
+    {
+      "name": "Apple",
+      "aliases": ["Apple Inc.", "AAPL"],
+      "primary_domain": "apple.com",
+      "regional_domains": {
+        "UK": "apple.com/uk",
+        "Germany": "apple.com/de",
+        "Japan": "apple.com/jp",
+        "China": "apple.com.cn"
+      },
+      "industry": "Technology",
+      "subindustry": "Consumer Electronics",
+      "size": "Large",
+      "country": "US",
+      "confidence": 0.99
+    },
+    {
+      "name": "Tesla",
+      "aliases": ["Tesla Inc.", "TSLA", "Tesla Motors"],
+      "primary_domain": "tesla.com",
+      "regional_domains": {
+        "UK": "tesla.com/en_gb",
+        "Germany": "tesla.com/de_de",
+        "China": "tesla.cn"
+      },
+      "industry": "Automotive",
+      "subindustry": "Electric Vehicles",
+      "size": "Large",
+      "country": "US",
+      "confidence": 0.98
+    },
+    {
+      "name": "Amazon",
+      "aliases": ["Amazon.com", "AMZN", "Amazon Inc."],
+      "primary_domain": "amazon.com",
+      "regional_domains": {
+        "UK": "amazon.co.uk",
+        "Germany": "amazon.de",
+        "Japan": "amazon.co.jp",
+        "India": "amazon.in",
+        "Canada": "amazon.ca"
+      },
+      "industry": "Technology",
+      "subindustry": "E-commerce",
+      "size": "Large",
+      "country": "US",
+      "confidence": 0.99
+    },
+    {
+      "name": "Google",
+      "aliases": ["Alphabet", "GOOGL", "Google LLC"],
+      "primary_domain": "google.com",
+      "regional_domains": {
+        "UK": "google.co.uk",
+        "Germany": "google.de",
+        "Japan": "google.co.jp",
+        "India": "google.co.in"
+      },
+      "industry": "Technology",
+      "subindustry": "Internet Services",
+      "size": "Large",
+      "country": "US",
+      "confidence": 0.99
+    },
+    {
+      "name": "Tata Motors",
+      "aliases": ["Tata", "TTMT"],
+      "primary_domain": "tatamotors.com",
+      "regional_domains": {
+        "UK": "tatamotors.co.uk",
+        "India": "tatamotors.com"
+      },
+      "industry": "Automotive",
+      "subindustry": "Commercial Vehicles",
+      "size": "Large",
+      "country": "India",
+      "confidence": 0.95
+    },
+    {
+      "name": "Toyota",
+      "aliases": ["Toyota Motor Corporation", "TM"],
+      "primary_domain": "toyota.com",
+      "regional_domains": {
+        "Europe": "toyota-europe.com",
+        "UK": "toyota.co.uk",
+        "Germany": "toyota.de",
+        "Japan": "toyota.jp"
+      },
+      "industry": "Automotive",
+      "subindustry": "Passenger Vehicles",
+      "size": "Large",
+      "country": "Japan",
+      "confidence": 0.98
+    },
+    {
+      "name": "AT&T",
+      "aliases": ["American Telephone and Telegraph", "T"],
+      "primary_domain": "att.com",
+      "regional_domains": {},
+      "industry": "Telecommunications",
+      "subindustry": "Wireless",
+      "size": "Large",
+      "country": "US",
+      "confidence": 0.98
+    },
+    {
+      "name": "Unilever",
+      "aliases": ["UL", "Unilever PLC"],
+      "primary_domain": "unilever.com",
+      "regional_domains": {
+        "UK": "unilever.co.uk",
+        "Germany": "unilever.de",
+        "India": "unilever.in"
+      },
+      "industry": "Consumer Goods",
+      "subindustry": "Personal Care",
+      "size": "Large",
+      "country": "UK",
+      "confidence": 0.97
+    },
+    {
+      "name": "IBM",
+      "aliases": ["International Business Machines", "IBM Corp"],
+      "primary_domain": "ibm.com",
+      "regional_domains": {
+        "UK": "ibm.com/uk-en",
+        "Germany": "ibm.com/de-de",
+        "Japan": "ibm.com/jp-ja"
+      },
+      "industry": "Technology",
+      "subindustry": "Enterprise Software",
+      "size": "Large",
+      "country": "US",
+      "confidence": 0.99
+    },
+    {
+      "name": "Samsung",
+      "aliases": ["Samsung Electronics", "Samsung Group"],
+      "primary_domain": "samsung.com",
+      "regional_domains": {
+        "UK": "samsung.com/uk",
+        "Germany": "samsung.com/de",
+        "US": "samsung.com/us"
+      },
+      "industry": "Technology",
+      "subindustry": "Consumer Electronics",
+      "size": "Large",
+      "country": "South Korea",
+      "confidence": 0.98
+    },
+    {
+      "name": "O'Reilly",
+      "aliases": ["O'Reilly Media", "O'Reilly & Associates"],
+      "primary_domain": "oreilly.com",
+      "regional_domains": {},
+      "industry": "Technology",
+      "subindustry": "Publishing",
+      "size": "Medium",
+      "country": "US",
+      "confidence": 0.96
+    }
+  ],
+  "metadata": {
+    "last_updated": "2024-01-15",
+    "total_companies": 12,
+    "coverage": "Major global companies across technology, automotive, telecommunications, and consumer goods sectors"
+  }
+}
