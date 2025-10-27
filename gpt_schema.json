@@ -1,0 +1,47 @@
+{
+  "name": "Company Domain Mapper",
+  "description": "Intelligent agent that maps company names to their primary website domains with high precision. Supports contextual matching, fuzzy search, and provides confidence scores for all mappings.",
+  "instructions_file": "gpt_instructions.txt",
+  "conversation_starters": [
+    "Map these company names to their domains: Microsoft, Apple, Tesla",
+    "Find the domain for Tata Motors in the UK",
+    "What's the official website for Toyota's European operations?",
+    "Help me find domains for a list of Fortune 500 companies"
+  ],
+  "knowledge_files": [
+    "knowledge/company_database.json",
+    "knowledge/domain_mapping_rules.md",
+    "knowledge/industry_taxonomy.json"
+  ],
+  "capabilities": {
+    "web_browsing": true,
+    "code_interpreter": false,
+    "dalle": false
+  },
+  "tools": [],
+  "model": "gpt-4",
+  "categories": [
+    "Business",
+    "Research",
+    "Productivity"
+  ],
+  "tags": [
+    "company-lookup",
+    "domain-mapping",
+    "business-intelligence",
+    "web-research",
+    "data-matching"
+  ],
+  "privacy_policy": "This agent does not store or share user queries. All company name lookups are processed in real-time without data retention.",
+  "terms_of_service": "Use this agent for legitimate business research only. Verify critical information independently.",
+  "example_prompts": [
+    {
+      "prompt": "Find the domain for Amazon",
+      "response": "**Company**: Amazon\n**Domain**: amazon.com\n**Confidence**: 0.99\n**Match Type**: Exact\n**Notes**: Primary global e-commerce and cloud computing platform"
+    },
+    {
+      "prompt": "Map Unilever in Germany to domain",
+      "response": "**Company**: Unilever\n**Domain**: unilever.de\n**Confidence**: 0.92\n**Match Type**: Contextual\n**Notes**: German regional site for multinational consumer goods company\n**Alternatives**: unilever.com (global)"
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "actions": [
+    {
+      "name": "web_search_company_domain",
+      "description": "Search the web for company domain information when internal database lookup fails",
+      "enabled": true,
+      "fallback_only": true,
+      "confidence_threshold": 0.80,
+      "search_patterns": [
+        "{company_name} official website",
+        "{company_name} {country} official site",
+        "{company_name} {industry} company website",
+        "site:{company_name}.com OR site:{company_name}.co.uk OR site:{company_name}.de"
+      ],
+      "validation_rules": {
+        "domain_must_contain_brand": true,
+        "exclude_domains": [
+          "wikipedia.org",
+          "linkedin.com",
+          "facebook.com",
+          "twitter.com",
+          "instagram.com",
+          "youtube.com",
+          "crunchbase.com",
+          "bloomberg.com",
+          "reuters.com"
+        ],
+        "require_ssl": true,
+        "check_company_indicators": [
+          "about us",
+          "contact",
+          "company",
+          "corporate",
+          "legal",
+          "copyright"
+        ]
+      }
+    },
+    {
+      "name": "domain_validation",
+      "description": "Validate that a found domain actually belongs to the specified company",
+      "enabled": true,
+      "checks": [
+        {
+          "type": "dns_resolution",
+          "description": "Verify domain resolves to active server"
+        },
+        {
+          "type": "ssl_certificate",
+          "description": "Check for valid SSL certificate"
+        },
+        {
+          "type": "content_analysis",
+          "description": "Analyze page content for company indicators"
+        },
+        {
+          "type": "brand_consistency",
+          "description": "Verify brand name appears on site"
+        }
+      ]
+    },
+    {
+      "name": "fuzzy_matching",
+      "description": "Perform fuzzy string matching for company names",
+      "enabled": true,
+      "algorithms": [
+        {
+          "name": "levenshtein",
+          "threshold": 0.90,
+          "weight": 0.4
+        },
+        {
+          "name": "jaro_winkler",
+          "threshold": 0.85,
+          "weight": 0.3
+        },
+        {
+          "name": "soundex",
+          "threshold": 0.80,
+          "weight": 0.3
+        }
+      ]
+    },
+    {
+      "name": "contextual_scoring",
+      "description": "Apply contextual scoring based on additional information",
+      "enabled": true,
+      "scoring_weights": {
+        "country_match": 0.15,
+        "industry_match": 0.10,
+        "size_match": 0.05,
+        "keyword_match": 0.08,
+        "historical_accuracy": 0.05,
+        "domain_authority": 0.03
+      }
+    }
+  ],
+  "response_templates": {
+    "high_confidence": {
+      "format": "**Company**: {company_name}\n**Domain**: {domain}\n**Confidence**: {confidence}\n**Match Type**: {match_type}\n**Notes**: {notes}",
+      "confidence_range": [0.95, 1.0]
+    },
+    "medium_confidence": {
+      "format": "**Company**: {company_name}\n**Domain**: {domain}\n**Confidence**: {confidence}\n**Match Type**: {match_type}\n**Notes**: {notes}\n**Reasoning**: {reasoning}",
+      "confidence_range": [0.80, 0.94]
+    },
+    "low_confidence": {
+      "format": "**Company**: {company_name}\n**Domain**: {domain} (uncertain)\n**Confidence**: {confidence}\n**Match Type**: {match_type}\n**Notes**: {notes}\n**Alternatives**: {alternatives}\n**Suggestion**: Please verify this result independently",
+      "confidence_range": [0.60, 0.79]
+    },
+    "no_match": {
+      "format": "**Company**: {company_name}\n**Status**: No confident match found\n**Suggestions**: {suggestions}\n**Next Steps**: Try providing additional context (country, industry) or verify spelling",
+      "confidence_range": [0.0, 0.59]
+    }
+  },
+  "error_handling": {
+    "network_timeout": {
+      "message": "Unable to perform web search due to network timeout. Using internal database only.",
+      "fallback": "internal_only"
+    },
+    "api_limit_exceeded": {
+      "message": "Search API limit reached. Results based on internal database only.",
+      "fallback": "internal_only"
+    },
+    "invalid_input": {
+      "message": "Please provide a valid company name for domain mapping.",
+      "action": "request_clarification"
+    }
+  },
+  "performance_settings": {
+    "max_search_results": 5,
+    "timeout_seconds": 10,
+    "cache_duration_hours": 24,
+    "max_concurrent_searches": 3
+  }
+}

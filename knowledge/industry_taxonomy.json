@@ -1,0 +1,205 @@
+{
+  "industries": {
+    "Technology": {
+      "subindustries": {
+        "Software": {
+          "keywords": ["software", "cloud", "saas", "platform", "enterprise", "productivity"],
+          "common_domains": [".com", ".io", ".tech"]
+        },
+        "Consumer Electronics": {
+          "keywords": ["electronics", "devices", "smartphones", "computers", "hardware"],
+          "common_domains": [".com", ".co.jp", ".cn"]
+        },
+        "Internet Services": {
+          "keywords": ["search", "social", "web", "online", "digital", "internet"],
+          "common_domains": [".com", ".net", ".org"]
+        },
+        "Enterprise Software": {
+          "keywords": ["enterprise", "business", "consulting", "solutions", "services"],
+          "common_domains": [".com", ".biz"]
+        },
+        "Semiconductors": {
+          "keywords": ["chips", "processors", "silicon", "semiconductor", "electronics"],
+          "common_domains": [".com", ".co.jp", ".co.kr"]
+        },
+        "Publishing": {
+          "keywords": ["books", "media", "publishing", "content", "education"],
+          "common_domains": [".com", ".org", ".edu"]
+        }
+      }
+    },
+    "Automotive": {
+      "subindustries": {
+        "Electric Vehicles": {
+          "keywords": ["electric", "ev", "battery", "sustainable", "green", "autonomous"],
+          "common_domains": [".com", ".cn", ".de"]
+        },
+        "Passenger Vehicles": {
+          "keywords": ["cars", "vehicles", "automotive", "mobility", "transport"],
+          "common_domains": [".com", ".co.jp", ".de"]
+        },
+        "Commercial Vehicles": {
+          "keywords": ["trucks", "commercial", "fleet", "logistics", "transportation"],
+          "common_domains": [".com", ".co.in", ".co.uk"]
+        },
+        "Auto Parts": {
+          "keywords": ["parts", "components", "supplies", "manufacturing", "automotive"],
+          "common_domains": [".com", ".de", ".co.jp"]
+        }
+      }
+    },
+    "Telecommunications": {
+      "subindustries": {
+        "Wireless": {
+          "keywords": ["wireless", "mobile", "cellular", "telecom", "network", "5g"],
+          "common_domains": [".com", ".net"]
+        },
+        "Internet Providers": {
+          "keywords": ["internet", "broadband", "fiber", "isp", "connectivity"],
+          "common_domains": [".com", ".net"]
+        },
+        "Infrastructure": {
+          "keywords": ["infrastructure", "towers", "network", "equipment", "telecom"],
+          "common_domains": [".com", ".net"]
+        }
+      }
+    },
+    "Consumer Goods": {
+      "subindustries": {
+        "Personal Care": {
+          "keywords": ["beauty", "personal", "care", "cosmetics", "hygiene", "health"],
+          "common_domains": [".com", ".co.uk", ".de"]
+        },
+        "Food & Beverage": {
+          "keywords": ["food", "beverage", "nutrition", "consumer", "brands"],
+          "common_domains": [".com", ".co.uk", ".de"]
+        },
+        "Household Products": {
+          "keywords": ["household", "cleaning", "home", "products", "consumer"],
+          "common_domains": [".com", ".co.uk", ".de"]
+        }
+      }
+    },
+    "Financial Services": {
+      "subindustries": {
+        "Banking": {
+          "keywords": ["bank", "banking", "financial", "credit", "loans", "deposits"],
+          "common_domains": [".com", ".bank", ".co.uk"]
+        },
+        "Insurance": {
+          "keywords": ["insurance", "coverage", "protection", "risk", "claims"],
+          "common_domains": [".com", ".insurance", ".co.uk"]
+        },
+        "Investment": {
+          "keywords": ["investment", "funds", "asset", "wealth", "portfolio"],
+          "common_domains": [".com", ".investments"]
+        }
+      }
+    },
+    "Healthcare": {
+      "subindustries": {
+        "Pharmaceuticals": {
+          "keywords": ["pharma", "drugs", "medicine", "healthcare", "biotech"],
+          "common_domains": [".com", ".pharma", ".health"]
+        },
+        "Medical Devices": {
+          "keywords": ["medical", "devices", "equipment", "healthcare", "diagnostics"],
+          "common_domains": [".com", ".med"]
+        },
+        "Biotechnology": {
+          "keywords": ["biotech", "biology", "research", "life sciences", "genetics"],
+          "common_domains": [".com", ".bio", ".org"]
+        }
+      }
+    },
+    "Energy": {
+      "subindustries": {
+        "Oil & Gas": {
+          "keywords": ["oil", "gas", "energy", "petroleum", "drilling", "refining"],
+          "common_domains": [".com", ".energy"]
+        },
+        "Renewable Energy": {
+          "keywords": ["renewable", "solar", "wind", "clean", "sustainable", "green"],
+          "common_domains": [".com", ".energy", ".green"]
+        },
+        "Utilities": {
+          "keywords": ["utilities", "electricity", "power", "water", "gas", "energy"],
+          "common_domains": [".com", ".utility"]
+        }
+      }
+    },
+    "Retail": {
+      "subindustries": {
+        "E-commerce": {
+          "keywords": ["ecommerce", "online", "retail", "shopping", "marketplace"],
+          "common_domains": [".com", ".shop", ".store"]
+        },
+        "Department Stores": {
+          "keywords": ["department", "retail", "fashion", "clothing", "merchandise"],
+          "common_domains": [".com", ".store"]
+        },
+        "Specialty Retail": {
+          "keywords": ["specialty", "niche", "category", "focused", "retail"],
+          "common_domains": [".com", ".store", ".shop"]
+        }
+      }
+    }
+  },
+  "regional_patterns": {
+    "US": {
+      "common_tlds": [".com", ".us", ".org"],
+      "business_culture": "Direct domain names, often matching company name"
+    },
+    "UK": {
+      "common_tlds": [".co.uk", ".com", ".org.uk"],
+      "business_culture": "Preference for .co.uk for local businesses"
+    },
+    "Germany": {
+      "common_tlds": [".de", ".com"],
+      "business_culture": "Strong preference for .de domain"
+    },
+    "Japan": {
+      "common_tlds": [".co.jp", ".jp", ".com"],
+      "business_culture": "Corporate domains often use .co.jp"
+    },
+    "China": {
+      "common_tlds": [".cn", ".com.cn", ".com"],
+      "business_culture": "Local companies prefer .cn, international use .com"
+    },
+    "India": {
+      "common_tlds": [".in", ".co.in", ".com"],
+      "business_culture": "Mix of .in and .com based on market focus"
+    }
+  },
+  "size_indicators": {
+    "Large": {
+      "characteristics": ["Fortune 500", "Global presence", "Multiple domains", "Regional sites"],
+      "domain_patterns": ["Primary .com", "Multiple regional variants", "Brand consistency"]
+    },
+    "Medium": {
+      "characteristics": ["Regional presence", "Industry focus", "Growing market"],
+      "domain_patterns": ["Single primary domain", "Regional expansion", "Industry-specific TLD"]
+    },
+    "Small": {
+      "characteristics": ["Local presence", "Niche market", "Limited resources"],
+      "domain_patterns": ["Simple domain structure", "Local TLD preference", "Basic web presence"]
+    }
+  },
+  "domain_quality_indicators": {
+    "high_quality": [
+      "SSL certificate",
+      "Professional design",
+      "Contact information",
+      "About page",
+      "Legal pages",
+      "Company branding"
+    ],
+    "suspicious": [
+      "Parked domain",
+      "Under construction",
+      "No company information",
+      "Redirect to unrelated site",
+      "Poor design quality"
+    ]
+  }
+}
